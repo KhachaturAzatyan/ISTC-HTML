@@ -1,0 +1,13 @@
+table, th, td {
+    border: 1px solid rgb(0, 9, 128);
+    border-collapse: collapse;
+  }
+  .tabel_one{
+      background-color: yellow; 
+  }
+  th, td {
+    padding: 15px;
+  }
+  th {
+    text-align: left;
+  }
