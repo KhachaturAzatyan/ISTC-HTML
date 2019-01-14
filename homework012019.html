@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body{
+            width:90%;
+            height: 100%;
+        }
+        #ball{
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            background-color: blue;
+            position: relative;
+            animation-duration: 3s;
+            animation-fill-mode: forwards
+          }
+          @keyframes mymove {
+              from{background-color: blue;left: 0px;}
+              to{background-color:chartreuse;left:100%; }
+          }
+                          
+    </style>
+
+</head>
+<body>
+    <div id="ball" onclick="myfunction()"></div>
+    <script>
+        function myfunction(){
+            var x = document.getElementById("ball");
+            x.style.animationName = "mymove"
+        }
+    </script>
+</body>
+</html>
