@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    var str = "abkacddbec";
+    var arr = str.split("");
+    var step = 0;
+    var res= [];
+    for(var i=0;i<arr.length;i++){
+        for(var j=0;j<arr.length;j++){
+            if(arr[i]==arr[j]){
+                step+=1;
+                if(step>1){
+                    break;
+                }
+            }
+        }
+        if(step == 1){
+            res.push(arr[i]);
+        }
+        step = 0;
+
+    }
+    console.log(res[0])
+    
+    
+    
+    
+    
+    </script>
+
+</body>
+</html>
